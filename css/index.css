@@ -1,0 +1,270 @@
+:root {
+	--primaria: #A7283E;
+	--secundaria: #E8E7E7;
+	--terciaria: #1E1814;
+}
+
+@font-face {
+	font-family: quicksand;
+	src: url(../fonts/quicksand.ttf);
+}
+
+body,
+html {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-color: var(--primaria);
+	font-family: 'quicksand', sans-serif, arial;
+}
+
+.widthLimitation {
+	width: 50%;
+	margin: auto;
+}
+
+header {
+	display: block;
+}
+
+nav.headerNav {
+	display: flex;
+	margin: auto;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+ul.headerMenu {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+	color: var(--secundaria);
+}
+
+ul.headerMenu a {
+	color: var(--secundaria);
+	text-decoration: none;
+}
+
+ul.headerMenu a:hover {
+	font-weight: 700;
+}
+
+.headerActiveLink {
+	font-weight: 600;
+}
+
+ul.headerRedes {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+}
+
+div.bgAmbulancias {
+	height: 500px;
+	width: 100%;
+	background: linear-gradient(0deg,
+			rgba(167, 40, 62, 1),
+			rgba(167, 40, 62, .1)),
+		url('../img/img1.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+div.containerFraseEfeito {
+	text-align: center;
+}
+
+main h2.fraseEfeito {
+	color: var(--secundaria);
+	font-weight: 300;
+	font-size: 64px;
+	text-align: initial;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: -130px;
+	text-transform: uppercase;
+}
+
+main h2.fraseEfeito b {
+	font-weight: 700;
+}
+
+.cruzEsquerda {
+	display: inline-block;
+	color: var(--secundaria);
+	position: relative;
+	top: -80px;
+	left: 30px;
+	font-size: 100px;
+	transform: rotate(-5deg);
+}
+
+.cruzEsquerda img:nth-child(1) {
+	position: relative;
+	display: inline-block;
+	top: -80px;
+	left: 100px;
+	transform: rotate(15deg);
+}
+
+.cruzEsquerda img:nth-child(2) {
+	transform: rotate(15deg);
+}
+
+.cruzEsquerda img:nth-child(3) {
+	position: relative;
+	display: inline-block;
+	top: 0px;
+	left: -15px;
+	transform: rotate(15deg);
+}
+
+.cruzDireita img:nth-child(1) {
+	position: relative;
+	display: inline-block;
+	top: -70px;
+	left: 20px;
+	transform: rotate(15deg);
+}
+
+.cruzDireita img:nth-child(2) {
+	transform: rotate(15deg);
+}
+
+.cruzDireita img:nth-child(3) {
+	position: relative;
+	display: inline-block;
+	top: 50px;
+	left: -100px;
+	transform: rotate(15deg);
+}
+
+.cruzDireita {
+	display: inline-block;
+	color: var(--secundaria);
+	position: relative;
+	top: -300px;
+	left: -50px;
+	transform: rotate(-25deg);
+	font-size: 100px;
+}
+
+.containerBotoesDeChamada {
+	text-align: center;
+	display: block;
+}
+
+.botoesDeChamada {
+	display: flex;
+	gap: 32px;
+	width: fit-content;
+	margin: 0px auto;
+}
+
+.botoesDeChamada button {
+	border: none;
+	border-radius: 10px;
+	padding: 30px 15px;
+	font-size: 32px;
+	text-transform: uppercase;
+}
+
+.botoesDeChamada button:hover {
+	cursor: pointer;
+}
+
+.botoesDeChamada button:nth-child(1) {
+	color: var(--primaria);
+	background-color: var(--secundaria);
+}
+
+.botoesDeChamada button:nth-child(3) {
+	background-color: rgba(30, 24, 20, .3);
+	color: var(--secundaria);
+}
+
+#descServico {
+	color: var(--secundaria);
+	text-align: center;
+	font-weight: 300;
+	margin: auto;
+}
+
+#descServico b {
+	font-weight: 500;
+}
+
+.texts {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	color: var(--secundaria);
+}
+
+.texts h3 {
+	font-size: 48px;
+	font-weight: 700;
+}
+
+.texts h4 {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.textureBG {
+	background: linear-gradient(rgba(167, 40, 62, 1),
+			rgba(167, 40, 62, .1)),
+		url('../img/texture.png');
+	padding: 200px 0;
+	align-items: center;
+}
+
+.cessaoSecundaria {
+	background-color: var(--secundaria);
+}
+
+.cessaoSecundaria {
+	margin: 0;
+	padding: 16px;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto auto;
+	column-gap: 300px;
+	row-gap: 100px;
+	justify-content: center;
+}
+
+.cessaoSecundaria div {
+	text-align: center;
+	width: 250px;
+}
+
+.cessaoSecundaria div h4,
+.cessaoSecundaria div p {
+	margin: 5px 0;
+}
+
+.cessaoSecundaria div:nth-child(1) {
+	grid-column-start: 2;
+
+}
+
+.cessaoSecundaria div:nth-child(2) {
+	grid-column-start: 3;
+}
+
+.cessaoSecundaria div:nth-child(3) {
+	grid-column-start: 2;
+}
+
+.cessaoSecundaria div:nth-child(4) {
+	grid-column-start: 3;
+}
