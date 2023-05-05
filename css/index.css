@@ -11,10 +11,12 @@
 
 body,
 html {
+	z-index: -2;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	background-color: var(--primaria);
+	color: var(--secundaria);
 	font-family: 'quicksand', sans-serif, arial;
 }
 
@@ -233,18 +235,26 @@ main h2.fraseEfeito b {
 
 .cessaoSecundaria {
 	margin: 0;
-	padding: 16px;
+	padding: 150px;
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 	grid-template-rows: auto auto;
 	column-gap: 300px;
-	row-gap: 100px;
+	row-gap: 50px;
 	justify-content: center;
 }
 
 .cessaoSecundaria div {
 	text-align: center;
-	width: 250px;
+	width: 230px;
+	color: var(--primaria);
+	font-weight: 600;
+}
+
+.cessaoSecundaria div h4 {
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .cessaoSecundaria div h4,
@@ -267,4 +277,80 @@ main h2.fraseEfeito b {
 
 .cessaoSecundaria div:nth-child(4) {
 	grid-column-start: 3;
+}
+
+section.cessaoTerciaria {
+	background: url('../img/texture2.png');
+	background-color: #831F2E;
+	overflow: hidden;
+	color: var(--secundaria);
+}
+
+#oferecemos {
+	font-size: 32px;
+	text-align: center;
+}
+
+#oferecemosImg {
+	width: 30%;
+	height: 500px;
+	display: block;
+	margin: auto;
+	background-image: url(/img/img1.jpeg);
+	background-size: cover;
+	background-position: top;
+	border: none;
+	border-radius: 50px;
+}
+
+#oferecemosDesc {
+	font-size: 32px;
+	text-align: center;
+}
+
+footer#footer {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	grid-template-rows: auto auto;
+	align-items: center;
+}
+
+footer#footer div:nth-child(1) {
+	grid-row: 1;
+	grid-column: 2/3;
+	margin-top: 36px;
+}
+
+footer#footer div {
+	display: block;
+	margin: auto;
+}
+
+footer#footer div p {
+	margin: 10px;
+}
+
+footer#footer div:nth-child(1) p.fraseDesc {
+	width: 200px;
+	text-align: left;
+}
+
+footer#footer div:nth-child(3) {
+	grid-row: 1;
+	grid-column: 4/5;
+	text-align: left;
+}
+
+footer#footer div:nth-child(2) {
+	grid-row: 1;
+	grid-column: 3/4;
+	width: 5px;
+	height: 80%;
+	background-color: var(--secundaria);
+}
+
+footer#footer h4 {
+	grid-row-start: 2/2;
+	grid-column: 1/6;
+	text-align: center;
 }
